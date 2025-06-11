@@ -14,6 +14,10 @@
         .fallback {
             margin-top: 20px;
         }
+        .fallback button {
+            font-size: 18px;
+            padding: 10px 20px;
+        }
     </style>
 </head>
 <body>
@@ -23,10 +27,13 @@
     <p>Chatboten kan inte laddas direkt i Canvas. Klicka på knappen nedan för att öppna den i en ny flik.</p>
 
     <div class="fallback">
-        <a href="https://chatgpt.com/g/g-67d800fa265481919608cf3e3a9b05ca-uppgift-ai-etik" target="_blank">
-            <button style="font-size: 18px; padding: 10px 20px;">Öppna Chatbot</button>
-        </a>
+        <button onclick="openChatbot()">Öppna Chatbot</button>
     </div>
+    <script>
+    function openChatbot() {
+        window.open("https://chatgpt.com/g/g-67d800fa265481919608cf3e3a9b05ca-uppgift-ai-etik", "_blank");
+    }
+    </script>
 
 </body>
-</html
+</html>
